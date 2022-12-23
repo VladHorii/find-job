@@ -22,6 +22,8 @@
     "typescript": "4.9.4"
   },
   "devDependencies": {
-    "eslint-config-custom": "*"
-  }
+    "eslint-config-custom": "*",
+    "prettier-config-custom": "*"
+  },
+  "prettier": "prettier-config-custom"
 }

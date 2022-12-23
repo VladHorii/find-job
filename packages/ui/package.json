@@ -13,6 +13,7 @@
     "@types/styled-components": "^5.1.26",
     "eslint": "^7.32.0",
     "eslint-config-custom": "*",
+    "prettier-config-custom": "*",
     "react": "^18.2.0",
     "tsconfig": "*",
     "typescript": "^4.5.2",
@@ -20,5 +21,6 @@
   },
   "dependencies": {
     "styled-components": "^5.3.6"
-  }
+  },
+  "prettier": "prettier-config-custom"
 }

@@ -1,5 +1,4 @@
-import React from 'react';
+import styled from "styled-components";
 
-export const H2 = () => {
-  return <div>H2s</div>;
-};
+// TODO: change styles
+export const H2 = styled.h2``;

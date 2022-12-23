@@ -1,9 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import { MediaQuery } from '@hs-job/types';
+import { MediaQuery } from "@hs-job/types";
+import styled from "styled-components";
 
 export const H1 = styled.h1`
-  font-family: 'Montserrat';
+  font-family: "Montserrat", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 56px;

@@ -1,4 +1,4 @@
-import { ButtonSmall } from "@hs-job/ui";
+import { ButtonSmall } from '@hs-job/ui';
 
 const Index = () => {
   return (

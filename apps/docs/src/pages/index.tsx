@@ -1,7 +1,9 @@
+import { H1 } from '@hs-job/ui';
+
 export default function Docs() {
   return (
     <div>
-      <h1>Docs12</h1>
+      <H1>Docs12</H1>
     </div>
   );
 }

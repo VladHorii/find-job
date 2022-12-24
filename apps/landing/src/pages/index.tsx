@@ -1,10 +1,13 @@
-import { ButtonSmall, H1 } from "@hs-job/ui";
+import { Button, H1 } from "@hs-job/ui";
 
 const Index = () => {
   return (
     <>
       <H1>Landing 1</H1>
-      <ButtonSmall>My btn</ButtonSmall>
+
+      <Button variant="outlined" size="large">
+        LaRossa
+      </Button>
     </>
   );
 };

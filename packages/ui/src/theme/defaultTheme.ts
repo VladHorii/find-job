@@ -37,9 +37,8 @@ export const Theme: DefaultTheme = {
       active: "#7E7E7E",
     },
   },
-
   typography: {
-    fontFamily: "Montserrat, serif",
+    fontFamily: "'Montserrat', sans-serif",
     fontStyle: "normal",
 
     fontWeight: {

@@ -5,6 +5,7 @@ import styled from "styled-components";
 const MyText = styled.h1`
   color: red;
   font-size: 50px;
+  font-family: "Montserrat", serif;
 `;
 
 export default function Docs() {

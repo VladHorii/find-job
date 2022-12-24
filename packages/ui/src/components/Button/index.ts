@@ -1,3 +1,2 @@
-export * from "./ButtonLarge";
-export * from "./ButtonNormal";
-export * from "./ButtonSmall";
+export * from "./Button";
+export * from "./types";

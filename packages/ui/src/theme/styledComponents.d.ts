@@ -38,5 +38,16 @@ declare module "styled-components" {
         active: string;
       };
     };
+
+    typography: {
+      fontFamily: string;
+      fontStyle: string;
+
+      fontWeight: {
+        small: number;
+        normal: number;
+        large: number;
+      };
+    };
   }
 }

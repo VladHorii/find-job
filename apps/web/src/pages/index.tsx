@@ -1,4 +1,4 @@
-import { H1 } from '@hs-job/ui';
+import { H1 } from "@hs-job/ui";
 
 export const Index = () => {
   return (

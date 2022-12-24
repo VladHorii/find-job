@@ -37,4 +37,15 @@ export const Theme: DefaultTheme = {
       active: "#7E7E7E",
     },
   },
+
+  typography: {
+    fontFamily: "Montserrat, serif",
+    fontStyle: "normal",
+
+    fontWeight: {
+      small: 400,
+      normal: 600,
+      large: 700,
+    },
+  },
 };

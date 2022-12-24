@@ -1,26 +1,16 @@
 import { FC, PropsWithChildren } from "react";
 import { createGlobalStyle } from "styled-components";
 
-type Props = PropsWithChildren<FC>;
-
-export const BaseStyles: Props = ({ children }) => {
+export const ResetStyled: FC<PropsWithChildren> = ({ children }) => {
   return (
     <>
-      <ResetStyled />
+      <BaseStyles />
       {children}
     </>
   );
 };
 
-export const ResetStyled = createGlobalStyle`
-  * {
-    font-style: normal;
-  }
-
-  body {
-    height: 100%;
-  }
-
+export const BaseStyles = createGlobalStyle`
   * {
     padding: 0;
     margin: 0;

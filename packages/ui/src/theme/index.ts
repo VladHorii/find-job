@@ -1,2 +1,2 @@
-export * from "./ResetStyles";
-export * from "./ResetStyles";
+export * from "./ResetStyled";
+export * from "./ThemeProvider";

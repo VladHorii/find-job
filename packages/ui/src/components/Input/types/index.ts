@@ -1,7 +1,6 @@
 export enum InputSize {
-  SMALL = "small",
-  NORMAL = "normal",
-  LARGE = "large",
+  Normal = "normal",
+  Large = "large",
 }
 
 export interface InputProps {

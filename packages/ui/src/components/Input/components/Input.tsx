@@ -1,7 +1,12 @@
+import { FC } from "react";
 import styled, { css } from "styled-components";
-import { InputProps, InputSize } from "./types";
+import { InputProps, InputSize } from "../types";
 
-export const Input = styled.input<InputProps>`
+export const Input: FC<InputProps> = (props) => {
+  return <MyInput {...props} />;
+};
+
+export const MyInput = styled.input<InputProps>`
   font-family: ${(props) => props.theme.typography.fontFamily};
   font-style: ${(props) => props.theme.typography.fontStyle};
   font-weight: ${(props) => props.theme.typography.fontWeight.small};
@@ -16,7 +21,7 @@ export const Input = styled.input<InputProps>`
   border-radius: 8px;
 
   ${(props) =>
-    props.size === InputSize.NORMAL &&
+    props.size === InputSize.Normal &&
     css`
       padding: 5px 10px;
 
@@ -26,7 +31,7 @@ export const Input = styled.input<InputProps>`
     `}
 
   ${(props) =>
-    props.size === InputSize.LARGE &&
+    props.size === InputSize.Large &&
     css`
       padding: 5px 10px;
 

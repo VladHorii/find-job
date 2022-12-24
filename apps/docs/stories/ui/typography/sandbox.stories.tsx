@@ -22,7 +22,7 @@ const Template: ComponentStory<FC<{ text: string }>> = ({ text }) => {
   );
 };
 
-export const Headers = Template.bind({});
-Headers.args = {
+export const Sandbox = Template.bind({});
+Sandbox.args = {
   text: "Lorem",
 };

@@ -20,6 +20,6 @@ export const P4 = styled.p`
 
   @media (min-width: ${MediaQuery.Mobile}px) {
     line-height: 155%;
-    ont-size: 9px;
+    font-size: 9px;
   }
 `;

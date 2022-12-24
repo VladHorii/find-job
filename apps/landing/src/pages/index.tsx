@@ -1,4 +1,4 @@
-import { Button, H1 } from "@hs-job/ui";
+import { Button, H1, Input } from "@hs-job/ui";
 
 const Index = () => {
   return (
@@ -8,6 +8,8 @@ const Index = () => {
       <Button variant="outlined" size="large">
         LaRossa
       </Button>
+
+      <Input />
     </>
   );
 };

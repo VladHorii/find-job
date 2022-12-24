@@ -1,10 +1,12 @@
 import React, { FC } from "react";
 import styled, { css } from "styled-components";
-import { ButtonProps, ButtonSize } from "./types";
+import { ButtonProps, ButtonSize } from "../types";
 
-interface Props extends ButtonProps {}
+export const ButtonOutlined: FC<ButtonProps> = (props) => {
+  return <Button {...props} />;
+};
 
-const Button = styled.button<Props>`
+const Button = styled.button<ButtonProps>`
   font-family: ${(props) => props.theme.typography.fontFamily};
   font-style: ${(props) => props.theme.typography.fontStyle};
   font-weight: ${(props) => props.theme.typography.fontWeight.small};
@@ -19,7 +21,7 @@ const Button = styled.button<Props>`
   border-radius: 8px;
 
   ${(props) =>
-    props.size === ButtonSize.NORMAL &&
+    props.size === ButtonSize.Normal &&
     css`
       font-size: 16px;
       line-height: 19px;
@@ -27,9 +29,8 @@ const Button = styled.button<Props>`
 
       padding: 7px 13px;
     `}
-
   ${(props) =>
-    props.size === ButtonSize.LARGE &&
+    props.size === ButtonSize.Large &&
     css`
       font-size: 18px;
       line-height: 22px;
@@ -37,7 +38,6 @@ const Button = styled.button<Props>`
 
       padding: 8px 15px;
     `}
-
   &:hover {
     border: 1px solid ${(props) => props.theme.palette.actions.hover};
   }
@@ -47,7 +47,3 @@ const Button = styled.button<Props>`
     border: 1px solid ${(props) => props.theme.palette.actions.disabled};
   }
 `;
-
-export const ButtonOutlined: FC<Props> = (props) => {
-  return <Button {...props} />;
-};

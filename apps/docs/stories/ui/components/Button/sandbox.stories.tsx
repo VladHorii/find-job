@@ -17,17 +17,21 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const Template: ComponentStory<FC<ButtonProps>> = (props) => {
+const Template: ComponentStory<FC<ButtonProps & { text: string }>> = ({
+  text,
+  ...props
+}) => {
   return (
     <Container>
-      <Button {...props}>Кнопка</Button>
+      <Button {...props}>{text}</Button>
     </Container>
   );
 };
 
-export const Headers = Template.bind({});
-Headers.args = {
+export const Sandbox = Template.bind({});
+Sandbox.args = {
   variant: "outlined",
   size: "small",
   disabled: false,
+  text: "Button",
 };

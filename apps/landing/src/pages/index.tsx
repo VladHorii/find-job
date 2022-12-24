@@ -5,9 +5,7 @@ const Index = () => {
     <>
       <H1>Landing 1</H1>
 
-      <Button variant="outlined" size="large">
-        LaRossa
-      </Button>
+      <Button>Button</Button>
     </>
   );
 };

@@ -1,24 +1,27 @@
 import React, { FC } from "react";
 import styled, { css } from "styled-components";
-import { ButtonProps, ButtonSize } from "./types";
+import { ButtonProps, ButtonSize } from "../types";
 
-interface Props extends ButtonProps {}
+export const ButtonContained: FC<ButtonProps> = (props) => {
+  return <Button {...props} />;
+};
 
-const Button = styled.button<Props>`
+const Button = styled.button<ButtonProps>`
   font-family: ${(props) => props.theme.typography.fontFamily};
   font-style: ${(props) => props.theme.typography.fontStyle};
   font-weight: ${(props) => props.theme.typography.fontWeight.small};
   font-size: 14px;
   line-height: 17px;
   text-align: center;
-  color: ${(props) => props.theme.palette.common.black};
+  color: ${(props) => props.theme.palette.common.white};
 
   padding: 5px 10px;
 
+  background-color: ${(props) => props.theme.palette.actions.active};
   border-radius: 8px;
 
   ${(props) =>
-    props.size === ButtonSize.NORMAL &&
+    props.size === ButtonSize.Normal &&
     css`
       padding: 7px 13px;
 
@@ -26,9 +29,8 @@ const Button = styled.button<Props>`
       font-size: 16px;
       line-height: 19px;
     `}
-
   ${(props) =>
-    props.size === ButtonSize.LARGE &&
+    props.size === ButtonSize.Large &&
     css`
       padding: 8px 15px;
 
@@ -36,16 +38,11 @@ const Button = styled.button<Props>`
       font-size: 18px;
       line-height: 22px;
     `}
-
   &:hover {
-    background-color: ${(props) => props.theme.palette.actions.disabled};
+    background-color: ${(props) => props.theme.palette.actions.hover};
   }
 
   &:disabled {
-    color: ${(props) => props.theme.palette.actions.disabled};
+    background-color: ${(props) => props.theme.palette.actions.disabled};
   }
 `;
-
-export const ButtonText: FC<Props> = (props) => {
-  return <Button {...props} />;
-};

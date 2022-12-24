@@ -27,7 +27,7 @@ const Template: ComponentStory<FC<InputProps>> = (props) => {
 
 export const Headers = Template.bind({});
 Headers.args = {
-  placeholder: "Input",
+  placeholder: "placeholder",
   size: "small",
   disabled: false,
 };

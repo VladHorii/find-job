@@ -1,10 +1,11 @@
+import React from "react";
+
 export enum InputSize {
   Normal = "normal",
   Large = "large",
 }
 
-export interface InputProps {
+export interface InputProps
+  extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "size"> {
   size?: "small" | "normal" | "large";
-  placeholder?: string;
-  disabled?: boolean;
 }

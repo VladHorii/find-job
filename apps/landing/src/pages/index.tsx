@@ -1,9 +1,9 @@
-import { ButtonSmall } from '@hs-job/ui';
+import { ButtonSmall, H1 } from "@hs-job/ui";
 
 const Index = () => {
   return (
     <>
-      <h1>Landing 1</h1>
+      <H1>Landing 1</H1>
       <ButtonSmall>My btn</ButtonSmall>
     </>
   );

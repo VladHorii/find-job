@@ -1,12 +1,12 @@
-import { Input, InputProps } from "@hs-job/ui";
+import { TextArea, TextAreaProp } from "@hs-job/ui";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import React, { FC } from "react";
 import styled from "styled-components";
 
 export default {
-  title: "docs/ui/components/Input",
-  component: Input,
-} as ComponentMeta<typeof Input>;
+  title: "docs/ui/components/TextArea",
+  component: TextArea,
+} as ComponentMeta<typeof TextArea>;
 
 const Container = styled.div`
   width: 100%;
@@ -17,10 +17,10 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const Template: ComponentStory<FC<InputProps>> = (props) => {
+const Template: ComponentStory<FC<TextAreaProp>> = (props) => {
   return (
     <Container>
-      <Input {...props} />
+      <TextArea {...props} />
     </Container>
   );
 };
@@ -28,6 +28,5 @@ const Template: ComponentStory<FC<InputProps>> = (props) => {
 export const Sandbox = Template.bind({});
 Sandbox.args = {
   placeholder: "placeholder",
-  size: "small",
   disabled: false,
 };

@@ -16,7 +16,7 @@ const MyInput = styled.input<MyInputProps>`
   font-weight: ${(props) => props.theme.typography.fontWeight.small};
   font-size: 14px;
   line-height: 17px;
-  text-align: center;
+  text-align: start;
   color: ${(props) => props.theme.palette.common.black};
 
   padding: 5px 10px;
@@ -33,6 +33,7 @@ const MyInput = styled.input<MyInputProps>`
       font-size: 16px;
       line-height: 19px;
     `}
+
   ${(props) =>
     props.inputSize === InputSize.Large &&
     css`
@@ -42,6 +43,7 @@ const MyInput = styled.input<MyInputProps>`
       font-size: 18px;
       line-height: 22px;
     `}
+    
   &:hover {
     border: 1px solid ${(props) => props.theme.palette.actions.hover};
   }

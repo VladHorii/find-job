@@ -28,6 +28,5 @@ const Template: ComponentStory<FC<CheckBoxProps>> = (props) => {
 export const Headers = Template.bind({});
 Headers.args = {
   checked: false,
-  size: "small",
   disabled: false,
 };

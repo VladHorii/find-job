@@ -1,9 +1,3 @@
-export enum CheckBoxSize {
-  Normal = "normal",
-  Large = "large",
-}
+import { CheckboxProps as MuiCheckboxProps } from "@mui/material";
 
-export interface CheckBoxProps
-  extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "size"> {
-  size?: "small" | "normal" | "large";
-}
+export type CheckBoxProps = Pick<MuiCheckboxProps, "disabled" | "checked">;

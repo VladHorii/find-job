@@ -1,0 +1,14 @@
+{
+  "name": "@hs-job/hooks",
+  "version": "0.0.0",
+  "main": "./index.js",
+  "types": "./index.tsx",
+  "license": "MIT",
+  "scripts": {
+    "lint": "TIMING=1 eslint \"**/*.ts*\""
+  },
+  "dependencies": {
+    "react-responsive": "^9.0.2"
+  },
+  "prettier": "prettier-config-custom"
+}

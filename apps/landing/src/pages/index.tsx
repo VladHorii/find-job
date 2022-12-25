@@ -6,6 +6,7 @@ const Index = () => {
       <H1>Landing 1</H1>
       <Button>Button</Button>
       <Input placeholder="Input" size="large" />
+      <input type="checkbox" />
     </>
   );
 };

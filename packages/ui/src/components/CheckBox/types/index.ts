@@ -1,3 +1,3 @@
 import { CheckboxProps as MuiCheckboxProps } from "@mui/material";
 
-export type CheckBoxProps = Pick<MuiCheckboxProps, "disabled" | "checked">;
+export type CheckboxProps = Pick<MuiCheckboxProps, "disabled" | "checked">;

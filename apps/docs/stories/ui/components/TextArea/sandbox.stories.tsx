@@ -1,12 +1,12 @@
-import { TextArea, TextAreaProp } from "@hs-job/ui";
+import { Textarea, TextareaProp } from "@hs-job/ui";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import React, { FC } from "react";
 import styled from "styled-components";
 
 export default {
-  title: "docs/ui/components/TextArea",
-  component: TextArea,
-} as ComponentMeta<typeof TextArea>;
+  title: "docs/ui/components/Textarea",
+  component: Textarea,
+} as ComponentMeta<typeof Textarea>;
 
 const Container = styled.div`
   width: 100%;
@@ -17,10 +17,10 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const Template: ComponentStory<FC<TextAreaProp>> = (props) => {
+const Template: ComponentStory<FC<TextareaProp>> = (props) => {
   return (
     <Container>
-      <TextArea {...props} />
+      <Textarea {...props} />
     </Container>
   );
 };

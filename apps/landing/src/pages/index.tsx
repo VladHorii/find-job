@@ -1,12 +1,7 @@
-import { H1, Input } from "@hs-job/ui";
+import { H1 } from "@hs-job/ui";
 
 const Index = () => {
-  return (
-    <>
-      <H1>Landing 1</H1>
-      <Input placeholder="Input1" size="normal" />
-    </>
-  );
+  return <H1>Landing</H1>;
 };
 
 export default Index;

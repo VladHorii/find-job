@@ -49,5 +49,10 @@ declare module "styled-components" {
         large: number;
       };
     };
+    mediaQuery: {
+      mobile: number;
+      tablet: number;
+      desktop: number;
+    };
   }
 }

@@ -1,12 +1,12 @@
-import { CheckBox, CheckBoxProps } from "@hs-job/ui";
+import { Checkbox, CheckboxProps } from "@hs-job/ui";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import React, { FC } from "react";
 import styled from "styled-components";
 
 export default {
-  title: "docs/ui/components/CheckBox",
-  component: CheckBox,
-} as ComponentMeta<typeof CheckBox>;
+  title: "docs/ui/components/Checkbox",
+  component: Checkbox,
+} as ComponentMeta<typeof Checkbox>;
 
 const Container = styled.div`
   width: 100%;
@@ -17,10 +17,10 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const Template: ComponentStory<FC<CheckBoxProps>> = (props) => {
+const Template: ComponentStory<FC<CheckboxProps>> = (props) => {
   return (
     <Container>
-      <CheckBox {...props} />
+      <Checkbox {...props} />
     </Container>
   );
 };

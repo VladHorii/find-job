@@ -25,8 +25,8 @@ const Template: ComponentStory<FC<CheckBoxProps>> = (props) => {
   );
 };
 
-export const Headers = Template.bind({});
-Headers.args = {
+export const Sandbox = Template.bind({});
+Sandbox.args = {
   checked: false,
   disabled: false,
 };

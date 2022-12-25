@@ -25,8 +25,8 @@ const Template: ComponentStory<FC<InputProps>> = (props) => {
   );
 };
 
-export const Headers = Template.bind({});
-Headers.args = {
+export const Sandbox = Template.bind({});
+Sandbox.args = {
   placeholder: "placeholder",
   size: "small",
   disabled: false,

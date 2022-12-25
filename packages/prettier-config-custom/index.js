@@ -9,4 +9,5 @@ module.exports = {
   arrowParens: "always",
   importOrder: ["^[./]"],
   importOrderSortSpecifiers: true,
+  printWidth: 80,
 };

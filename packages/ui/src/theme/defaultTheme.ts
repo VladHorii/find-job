@@ -47,4 +47,9 @@ export const Theme: DefaultTheme = {
       large: 700,
     },
   },
+  mediaQuery: {
+    mobile: 400,
+    tablet: 768,
+    desktop: 1200,
+  },
 };

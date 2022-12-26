@@ -1,7 +1,5 @@
-import { H1 } from "@hs-job/ui";
-
 const Index = () => {
-  return <H1>Landing</H1>;
+  return <div></div>;
 };
 
 export default Index;

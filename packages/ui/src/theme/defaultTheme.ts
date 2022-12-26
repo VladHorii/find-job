@@ -51,5 +51,8 @@ export const Theme: DefaultTheme = {
     mobile: 400,
     tablet: 768,
     desktop: 1200,
+    container: {
+      maxWidth: 1200,
+    },
   },
 };

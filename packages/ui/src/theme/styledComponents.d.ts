@@ -53,6 +53,9 @@ declare module "styled-components" {
       mobile: number;
       tablet: number;
       desktop: number;
+      container: {
+        maxWidth: number;
+      };
     };
   }
 }

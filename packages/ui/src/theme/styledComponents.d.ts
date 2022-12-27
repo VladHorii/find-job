@@ -33,9 +33,9 @@ declare module "styled-components" {
         active: string;
       };
       secondary: {
-        hover: string;
-        disabled: string;
-        active: string;
+        light: string;
+        main: string;
+        dark: string;
       };
     };
 

@@ -1,14 +1,14 @@
-import { Header } from "@/features";
+import { Header, MainInfo } from "@/features";
 import { ThemeProvider } from "@hs-job/ui";
 import { AppProps } from "next/app";
 import React, { FC } from "react";
-
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <ThemeProvider>
       <Header />
 
+      <MainInfo />
       <Component {...pageProps} />
     </ThemeProvider>
   );

@@ -1,5 +1,11 @@
+import { Banner } from "@/features";
+
 const Index = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Banner />
+    </div>
+  );
 };
 
 export default Index;

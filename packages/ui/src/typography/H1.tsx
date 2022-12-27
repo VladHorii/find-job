@@ -2,6 +2,7 @@ import { MediaQuery } from "@hs-job/types";
 import styled from "styled-components";
 
 export const H1 = styled.h1`
+  font-size: 36px;
   font-family: ${(props) => props.theme.typography.fontFamily};
   font-style: ${(props) => props.theme.typography.fontStyle};
   font-weight: ${(props) => props.theme.typography.fontWeight.large};
@@ -11,15 +12,11 @@ export const H1 = styled.h1`
 
   color: ${(props) => props.theme.palette.common.black};
 
-  @media (min-width: ${MediaQuery.Desktop}px) {
-    font-size: 56px;
-  }
-
   @media (min-width: ${MediaQuery.Tablet}px) {
     font-size: 45px;
   }
 
-  @media (min-width: ${MediaQuery.Mobile}px) {
-    font-size: 36px;
+  @media (min-width: ${MediaQuery.Desktop}px) {
+    font-size: 56px;
   }
 `;

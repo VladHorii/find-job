@@ -31,6 +31,10 @@ const Container = styled.div`
       font-size: 24px;
     }
   }
+
+  & .Typewriter__wrapper {
+    color: ${(props) => props.theme.palette.primary.light};
+  }
 `;
 
 export const DynamicText = () => {

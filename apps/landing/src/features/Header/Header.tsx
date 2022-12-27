@@ -23,6 +23,10 @@ const ButtonsWrapper = styled.div`
   gap: 15px;
 `;
 
+const Wrapper = styled.div`
+  box-shadow: 0 5px 5px rgba(183, 179, 179, 0.25);
+`;
+
 export const Header = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
 
@@ -35,19 +39,21 @@ export const Header = () => {
   };
 
   return (
-    <Container>
-      <Logo />
+    <Wrapper>
+      <Container>
+        <Logo />
 
-      <RightContent>
-        <ButtonsWrapper className="buttons-wrapper">
-          <AuthButtons variant={"outlined"} />
-        </ButtonsWrapper>
-        <IconButton className="burger-icon" onClick={handleOpenModal}>
-          <Burger />
-        </IconButton>
-      </RightContent>
+        <RightContent>
+          <ButtonsWrapper className="buttons-wrapper">
+            <AuthButtons variant={"outlined"} />
+          </ButtonsWrapper>
+          <IconButton className="burger-icon" onClick={handleOpenModal}>
+            <Burger />
+          </IconButton>
+        </RightContent>
 
-      <MobileModal isOpen={isOpenModal} onClose={handleCloseModal} />
-    </Container>
+        <MobileModal isOpen={isOpenModal} onClose={handleCloseModal} />
+      </Container>
+    </Wrapper>
   );
 };

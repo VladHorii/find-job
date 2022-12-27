@@ -1,4 +1,4 @@
-import { AuthButtons } from "@/components";
+import { AuthButtons } from "@/features";
 import { Cross } from "@hs-job/icons";
 import { IconButton, Modal } from "@hs-job/ui";
 import React, { FC } from "react";

@@ -1,4 +1,5 @@
-import { AuthButtons, Container, MobileModal } from "@/components";
+import { Container } from "@/components";
+import { AuthButtons, MobileModal } from "@/features";
 import { Burger } from "@hs-job/icons";
 import { IconButton, Logo } from "@hs-job/ui";
 import { useState } from "react";

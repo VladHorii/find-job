@@ -17,7 +17,7 @@ const CardWrapper = styled.div`
 `;
 
 const MainInfoWrapper = styled.div`
-  box-shadow: 0 0 4px 1px ${(props) => props.theme.palette.secondary.light};
+  box-shadow: 0 -4px 4px 1px ${(props) => props.theme.palette.secondary.light};
   background-color: ${(props) => props.theme.palette.common.white};
 `;
 

@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Container = styled.div`
   width: 100%;
   height: 100%;
-
+  z-index: 1;
   position: absolute;
 
   & div {
@@ -34,10 +34,12 @@ const Container = styled.div`
   }
 
   & div svg:nth-child(1) {
+    top: 5%;
     left: 20%;
   }
 
   & div svg:nth-child(2) {
+    top: 5%;
     right: 20%;
   }
 
@@ -52,12 +54,12 @@ const Container = styled.div`
   }
 
   & div svg:nth-child(5) {
-    bottom: 0;
+    bottom: 10%;
     left: 10%;
   }
 
   & div svg:nth-child(6) {
-    bottom: 0;
+    bottom: 10%;
     right: 10%;
   }
 `;

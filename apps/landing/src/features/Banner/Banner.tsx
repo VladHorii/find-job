@@ -4,10 +4,16 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  width: 100%;
-
   position: relative;
+`;
 
+const MainText = styled(H3)`
+  color: ${(props) => props.theme.palette.actions.hover};
+`;
+
+const ContentWrapper = styled.div`
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,23 +28,21 @@ const Container = styled.div`
   }
 `;
 
-const MainText = styled(H3)`
-  color: ${(props) => props.theme.palette.actions.hover};
-`;
-
 export const Banner = () => {
   return (
     <Container>
       <Background />
 
-      <MainText>Лучшее место для поиска работы</MainText>
-      <H4>Давай продолжим вместе</H4>
+      <ContentWrapper>
+        <MainText>Лучшее место для поиска работы</MainText>
+        <H4>Давай продолжим вместе</H4>
 
-      <DynamicText />
+        <DynamicText />
 
-      <Button size={"large"} variant={"contained"}>
-        Перейти к вакансиям
-      </Button>
+        <Button size={"large"} variant={"contained"}>
+          Перейти к вакансиям
+        </Button>
+      </ContentWrapper>
     </Container>
   );
 };

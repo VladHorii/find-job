@@ -32,9 +32,9 @@ export const Theme: DefaultTheme = {
       active: "#154D8C",
     },
     secondary: {
-      hover: "#F3F3F3",
-      disabled: "#C7C7C7",
-      active: "#7E7E7E",
+      light: "#F3F3F3",
+      main: "#C7C7C7",
+      dark: "#7E7E7E",
     },
   },
   typography: {

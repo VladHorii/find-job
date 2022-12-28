@@ -4,8 +4,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  margin-top: auto;
-  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  box-shadow: 0 -1px 4px 1px ${(props) => props.theme.palette.secondary.light};
 `;
 
 const ContentWrapper = styled.div`

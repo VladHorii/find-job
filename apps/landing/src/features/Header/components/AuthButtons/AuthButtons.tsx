@@ -2,9 +2,9 @@ import { Button, ButtonProps } from "@hs-job/ui";
 import { useRouter } from "next/router";
 import { FC } from "react";
 
-type AuthButtonsProps = Pick<ButtonProps, "variant">;
+type AuthButtonsProps = ButtonProps;
 
-export const AuthButtons: FC<AuthButtonsProps> = ({ variant }) => {
+export const AuthButtons: FC<AuthButtonsProps> = (props) => {
   const router = useRouter();
 
   const handleClickSignInButton = async () => {
@@ -17,10 +17,10 @@ export const AuthButtons: FC<AuthButtonsProps> = ({ variant }) => {
 
   return (
     <>
-      <Button variant={variant} onClick={handleClickSignInButton}>
+      <Button {...props} onClick={handleClickSignInButton}>
         Sign In
       </Button>
-      <Button variant={variant} onClick={handleClickSignUpButton}>
+      <Button {...props} onClick={handleClickSignUpButton}>
         Sign Up
       </Button>
     </>

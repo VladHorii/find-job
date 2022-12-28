@@ -1,26 +1,38 @@
 import { FC, PropsWithChildren } from "react";
 import styled from "styled-components";
 
-const ContentWrapper = styled.div`
+interface Props extends PropsWithChildren {
+  padding?: string;
+  margin?: string;
+}
+
+export const Container: FC<Props> = ({ children, ...props }) => {
+  return (
+    <MyContainer {...props}>
+      <ContentWrapper {...props}>{children}</ContentWrapper>
+    </MyContainer>
+  );
+};
+
+const MyContainer = styled.div<Props>`
+  width: 100%;
+
+  margin: ${(props) => props.margin || "0"};
+  background-color: ${(props) => props.theme.palette.common.white};
+`;
+
+const ContentWrapper = styled.div<Props>`
   display: flex;
   justify-content: space-between;
   max-width: ${(props) => props.theme.mediaQuery.container.maxWidth}px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 15px;
+
+  @media (min-width: ${(props) => props.theme.mediaQuery.tablet}px) {
+    padding: 15px;
+  }
 
   @media (min-width: ${(props) => props.theme.mediaQuery.desktop}px) {
-    padding: 40px 20px;
+    padding: 20px;
   }
 `;
-
-const MyContainer = styled.div`
-  background-color: ${(props) => props.theme.palette.common.white};
-`;
-
-export const Container: FC<PropsWithChildren> = ({ children }) => {
-  return (
-    <MyContainer>
-      <ContentWrapper>{children}</ContentWrapper>
-    </MyContainer>
-  );
-};

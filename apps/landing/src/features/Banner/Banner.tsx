@@ -1,9 +1,12 @@
+import { Container } from "@/components";
 import { Background, DynamicText } from "@/features";
 import { Button, H3, H4 } from "@hs-job/ui";
 import React from "react";
 import styled from "styled-components";
 
-const Container = styled.div`
+const ContainerContent = styled.div`
+  width: 100%;
+
   position: relative;
 `;
 
@@ -30,19 +33,21 @@ const ContentWrapper = styled.div`
 
 export const Banner = () => {
   return (
-    <Container>
-      <Background />
+    <Container margin={"auto"}>
+      <ContainerContent>
+        <Background />
 
-      <ContentWrapper>
-        <MainText>Лучшее место для поиска работы</MainText>
-        <H4>Давай продолжим вместе</H4>
+        <ContentWrapper>
+          <MainText>Лучшее место для поиска работы</MainText>
+          <H4>Давай продолжим вместе</H4>
 
-        <DynamicText />
+          <DynamicText />
 
-        <Button size={"large"} variant={"contained"}>
-          Перейти к вакансиям
-        </Button>
-      </ContentWrapper>
+          <Button size={"large"} variant={"contained"}>
+            Перейти к вакансиям
+          </Button>
+        </ContentWrapper>
+      </ContainerContent>
     </Container>
   );
 };

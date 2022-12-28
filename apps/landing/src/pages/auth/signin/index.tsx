@@ -1,5 +1,7 @@
+import { Signin } from "@/features/Auth";
+
 const Index = () => {
-  return <span>signin</span>;
+  return <Signin />;
 };
 
 export default Index;

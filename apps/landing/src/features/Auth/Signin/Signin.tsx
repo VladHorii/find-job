@@ -27,10 +27,18 @@ const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
 
-  padding: 90px;
+  margin: 0 10px;
+  padding: 30px 10px;
   gap: 30px;
 
   background-color: ${(props) => props.theme.palette.secondary.light};
   box-shadow: 0px 0px 250px 20px #fff;
-  border-radius: 50px;
+  border-radius: 8px;
+
+  @media (min-width: ${(props) => props.theme.mediaQuery.tablet}px) {
+    margin: 0;
+    padding: 90px;
+
+    border-radius: 50px;
+  }
 `;

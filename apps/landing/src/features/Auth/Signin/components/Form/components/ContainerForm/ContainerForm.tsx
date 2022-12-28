@@ -1,5 +1,5 @@
 import { Signin_DTO } from "@/features/Auth";
-import { Email, Password } from "@hs-job/icons";
+import { Email, Password, Visibility } from "@hs-job/icons";
 import { Checkbox, Input, Label, P2 } from "@hs-job/ui";
 import { FormikProps } from "formik";
 import React, { FC } from "react";
@@ -41,6 +41,7 @@ export const ContainerForm: FC<Props> = ({ actions }) => {
           placeholder="password..."
           onChange={handleChange}
           value={values.password}
+          icon={<Visibility />}
         />
       </Label>
 
@@ -85,6 +86,7 @@ const ContainerText = styled.div`
 `;
 
 const InputStyled = styled(Input)`
-  width: 100%;
-  min-height: 40px;
+  &.MuiInputBase-root {
+    width: 100%;
+  }
 `;

@@ -24,7 +24,8 @@ const ButtonsWrapper = styled.div`
 `;
 
 const Wrapper = styled.div`
-  box-shadow: 0 5px 5px rgba(183, 179, 179, 0.25);
+  margin-bottom: 10px;
+  box-shadow: 0px 1px 5px ${(props) => props.theme.palette.secondary.light};
 `;
 
 export const Header = () => {
@@ -45,7 +46,7 @@ export const Header = () => {
 
         <RightContent>
           <ButtonsWrapper className="buttons-wrapper">
-            <AuthButtons variant={"outlined"} />
+            <AuthButtons variant={"outlined"} size={"normal"} />
           </ButtonsWrapper>
           <IconButton className="burger-icon" onClick={handleOpenModal}>
             <Burger />

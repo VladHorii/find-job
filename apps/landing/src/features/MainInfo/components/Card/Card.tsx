@@ -8,16 +8,26 @@ export interface CardProps {
 }
 
 const CardWrapper = styled.div`
+  max-width: 300px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+
   padding: 10px;
   gap: 10px;
 
-  background: ${(props) => props.theme.palette.common.white};
-  box-shadow: 0 0 4px ${(props) => props.theme.palette.secondary.dark};
+  cursor: pointer;
+
+  box-shadow: 0px 0px 1px ${(props) => props.theme.palette.secondary.main};
+  background-color: ${(props) => props.theme.palette.common.white};
   border-radius: 8px;
-  max-width: 300px;
+
+  transition: transform 100ms linear;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 export const Card: FC<CardProps> = ({ title, description }) => {

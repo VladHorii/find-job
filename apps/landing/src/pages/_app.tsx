@@ -4,15 +4,6 @@ import { AppProps } from "next/app";
 import React, { FC } from "react";
 import styled from "styled-components";
 
-const Wrapper = styled.div`
-  height: 100vh;
-
-  display: flex;
-  flex-direction: column;
-
-  background-color: ${(props) => props.theme.palette.common.white};
-`;
-
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <ThemeProvider>
@@ -26,4 +17,14 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
     </ThemeProvider>
   );
 };
+
 export default MyApp;
+
+const Wrapper = styled.div`
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: ${(props) => props.theme.palette.common.white};
+`;

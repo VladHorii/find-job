@@ -4,6 +4,27 @@ import { Button, H3, H4 } from "@hs-job/ui";
 import React from "react";
 import styled from "styled-components";
 
+export const Banner = () => {
+  return (
+    <Container margin={"auto"}>
+      <ContainerContent>
+        <Background />
+
+        <ContentWrapper>
+          <MainText>Лучшее место для поиска работы</MainText>
+          <H4>Давай продолжим вместе</H4>
+
+          <DynamicText />
+
+          <Button size={"large"} variant={"contained"}>
+            Перейти к вакансиям
+          </Button>
+        </ContentWrapper>
+      </ContainerContent>
+    </Container>
+  );
+};
+
 const ContainerContent = styled.div`
   width: 100%;
 
@@ -30,24 +51,3 @@ const ContentWrapper = styled.div`
     gap: 15px;
   }
 `;
-
-export const Banner = () => {
-  return (
-    <Container margin={"auto"}>
-      <ContainerContent>
-        <Background />
-
-        <ContentWrapper>
-          <MainText>Лучшее место для поиска работы</MainText>
-          <H4>Давай продолжим вместе</H4>
-
-          <DynamicText />
-
-          <Button size={"large"} variant={"contained"}>
-            Перейти к вакансиям
-          </Button>
-        </ContentWrapper>
-      </ContainerContent>
-    </Container>
-  );
-};

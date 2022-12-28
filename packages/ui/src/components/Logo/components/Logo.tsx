@@ -1,4 +1,6 @@
+import { FC } from "react";
 import styled from "styled-components";
+import { H1 } from "../../../typography";
 
 export const FirstText = styled.span`
   font-family: ${(props) => props.theme.typography.fontFamily};
@@ -22,11 +24,15 @@ const SecondText = styled.span`
   color: ${(props) => props.theme.palette.success.dark};
 `;
 
-export const Logo = () => {
+interface Props {
+  onClick?: () => void;
+}
+
+export const Logo: FC<Props> = ({ onClick }) => {
   return (
-    <h1>
+    <H1 onClick={onClick}>
       <FirstText>HS</FirstText>
       <SecondText>Job</SecondText>
-    </h1>
+    </H1>
   );
 };

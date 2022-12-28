@@ -1,38 +1,87 @@
+import { Schema_Signin, Signin_DTO } from "@/features/Auth";
 import { Email, Password } from "@hs-job/icons";
-import { Checkbox, Input, Label, P2, P3 } from "@hs-job/ui";
+import { Checkbox, Input, Label, P2 } from "@hs-job/ui";
+import { Formik, FormikHelpers } from "formik";
 import React from "react";
 import styled from "styled-components";
 import { ContainerBtn, ContainerLink } from "./components";
 
+const initDTO_Signin: Signin_DTO = {
+  email: "",
+  password: "",
+  remember: false,
+};
+
 export const Form = () => {
+  const handleSubmitForm = (
+    values: Signin_DTO,
+    actions: FormikHelpers<Signin_DTO>
+  ) => {
+    console.log(JSON.stringify(values, null, 2));
+    actions.setSubmitting(false);
+  };
+
   return (
     <>
-      <ContainerForm>
-        <Label>
-          <ContainerText>
-            <Email />
-            <P2>Email:</P2>
-          </ContainerText>
+      <Formik
+        initialValues={initDTO_Signin}
+        validationSchema={Schema_Signin}
+        onSubmit={handleSubmitForm}
+      >
+        {({
+          handleChange,
+          handleBlur,
+          handleSubmit,
+          isSubmitting,
+          values,
+          errors,
+        }) => (
+          <ContainerForm onSubmit={handleSubmit}>
+            <Label>
+              <ContainerText>
+                <Email />
+                <P2>Email:</P2>
+              </ContainerText>
 
-          <InputStyled placeholder="email..." />
-        </Label>
+              <InputStyled
+                type={"email"}
+                name={"email"}
+                placeholder="email..."
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={values.email}
+              />
+            </Label>
+            <Label>
+              <ContainerText>
+                <Password />
+                <P2>Password:</P2>
+              </ContainerText>
 
-        <Label>
-          <ContainerText>
-            <Password />
-            <P2>Password:</P2>
-          </ContainerText>
+              <InputStyled
+                type={"password"}
+                name={"password"}
+                placeholder="password..."
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={values.password}
+              />
+            </Label>
 
-          <InputStyled placeholder="password..." />
-        </Label>
+            <Label align={"center"} direction={"row"}>
+              <Checkbox
+                name={"remember"}
+                onChange={handleChange}
+                value={values.remember}
+              />
+              <P2>Remember me</P2>
+            </Label>
 
-        <Label align={"center"} direction={"row"}>
-          <Checkbox />
-          <P2>Remember me</P2>
-        </Label>
-
-        <ContainerBtn />
-      </ContainerForm>
+            {errors && <span>{JSON.stringify(errors, null)}</span>}
+            <ContainerBtn isSubmitting={isSubmitting} />
+          </ContainerForm>
+        )}
+      </Formik>
 
       <ContainerLink />
     </>

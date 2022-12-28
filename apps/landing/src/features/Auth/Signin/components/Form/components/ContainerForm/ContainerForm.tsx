@@ -1,6 +1,6 @@
 import { Signin_DTO } from "@/features";
 import { Email, Password, Visibility } from "@hs-job/icons";
-import { Checkbox, Input, Label, P2 } from "@hs-job/ui";
+import { Button, Checkbox, Input, Label, P2 } from "@hs-job/ui";
 import { FormikProps } from "formik";
 import React, { FC } from "react";
 import styled from "styled-components";
@@ -33,6 +33,10 @@ export const ContainerForm: FC<Props> = ({ actions }) => {
         <ContainerText>
           <Password />
           <P2>Password:</P2>
+
+          <Button variant={"link"} style={{ padding: 0, marginLeft: "auto" }}>
+            Forgot password?
+          </Button>
         </ContainerText>
 
         <InputStyled
@@ -45,7 +49,7 @@ export const ContainerForm: FC<Props> = ({ actions }) => {
         />
       </Label>
 
-      <Label align={"center"} direction={"row"}>
+      <Label align={"center"} direction={"row"} gap={"5px"}>
         <Checkbox
           name={"remember"}
           onChange={handleChange}
@@ -54,7 +58,7 @@ export const ContainerForm: FC<Props> = ({ actions }) => {
         <P2>Remember me</P2>
       </Label>
 
-      {errors && <span>{JSON.stringify(errors, null)}</span>}
+      {/*{errors && <span>{JSON.stringify(errors, null)}</span>}*/}
       <ContainerBtn isSubmitting={isSubmitting} />
     </Container>
   );
@@ -67,7 +71,7 @@ const Container = styled.form`
   gap: 15px;
 
   & p {
-    color: #000;
+    color: ${(props) => props.theme.palette.common.black};
   }
 `;
 
@@ -75,9 +79,10 @@ const ContainerText = styled.div`
   display: flex;
   align-items: center;
 
-  margin-left: 10px;
+  padding-left: 10px;
   margin-bottom: 5px;
   gap: 5px;
+  width: 100%;
 
   & svg {
     width: 20px;
@@ -88,5 +93,6 @@ const ContainerText = styled.div`
 const InputStyled = styled(Input)`
   &.MuiInputBase-root {
     width: 100%;
+    min-width: 300px;
   }
 `;

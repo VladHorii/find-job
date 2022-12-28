@@ -6,7 +6,8 @@ export const Title = () => {
   return (
     <Container>
       <P1>Welcome back to</P1>
-      <Logo />
+      <Logo onClick={() => alert("Move to main page")} />
+      <P1>!</P1>
     </Container>
   );
 };
@@ -16,5 +17,5 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  gap: 8px;
+  gap: 5px;
 `;

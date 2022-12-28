@@ -2,7 +2,14 @@ import React, { FC, SVGProps } from "react";
 
 export const Password: FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
-    <svg width="15" height="16" viewBox="0 0 15 16" fill="none" {...props}>
+    <svg
+      width="15"
+      height="16"
+      viewBox="0 0 15 16"
+      fill="none"
+      opacity="0.2"
+      {...props}
+    >
       <path
         fillRule="evenodd"
         clipRule="evenodd"

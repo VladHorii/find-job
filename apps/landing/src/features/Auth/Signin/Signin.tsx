@@ -1,4 +1,4 @@
-import { Background, Form, Title } from "@/features/Auth";
+import { Background, Form, Links, Title } from "@/features/Auth";
 import React from "react";
 import styled from "styled-components";
 
@@ -9,6 +9,7 @@ export const Signin = () => {
         <ContentWrapper>
           <Title />
           <Form />
+          <Links />
         </ContentWrapper>
       </Container>
     </Background>

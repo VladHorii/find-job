@@ -2,7 +2,7 @@ import { Button } from "@hs-job/ui";
 import React from "react";
 import styled from "styled-components";
 
-export const ContainerLink = () => {
+export const Links = () => {
   return (
     <Container>
       <Button variant={"link"}>Forgot password?</Button>

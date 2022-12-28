@@ -1,7 +1,12 @@
-import { Signin } from "@/features/Auth";
+import { AuthLayout } from "@/components";
+import { Signin } from "@/features";
 
 const Index = () => {
-  return <Signin />;
+  return (
+    <AuthLayout>
+      <Signin />
+    </AuthLayout>
+  );
 };
 
 export default Index;

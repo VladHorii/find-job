@@ -11,6 +11,10 @@ export const ResetStyled: FC<PropsWithChildren> = ({ children }) => {
 };
 
 export const BaseStyles = createGlobalStyle`
+  html, body {
+    height: 100%;
+  }
+
   * {
     padding: 0;
     margin: 0;

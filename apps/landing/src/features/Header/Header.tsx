@@ -54,7 +54,7 @@ const ButtonsWrapper = styled.div`
   gap: 15px;
 `;
 
-const Wrapper = styled.div`
+const Wrapper = styled.header`
   margin-bottom: 10px;
-  box-shadow: 0px 1px 5px ${(props) => props.theme.palette.secondary.light};
+  box-shadow: 0 1px 5px ${(props) => props.theme.palette.secondary.light};
 `;

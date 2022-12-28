@@ -1,4 +1,4 @@
-import { Schema_Signin, Signin_DTO } from "@/features/Auth";
+import { Schema_Signin, Signin_DTO } from "@/features";
 import { Formik, FormikHelpers } from "formik";
 import React from "react";
 import { ContainerForm } from "./components";

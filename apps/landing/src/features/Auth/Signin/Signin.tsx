@@ -1,23 +1,22 @@
-import { Background, Form, Links, Title } from "@/features/Auth";
+import { Form, Links, Title } from "@/features";
 import React from "react";
 import styled from "styled-components";
 
 export const Signin = () => {
   return (
-    <Background>
-      <Container>
-        <ContentWrapper>
-          <Title />
-          <Form />
-          <Links />
-        </ContentWrapper>
-      </Container>
-    </Background>
+    <Container>
+      <ContentWrapper>
+        <Title />
+        <Form />
+        <Links />
+      </ContentWrapper>
+    </Container>
   );
 };
 
 const Container = styled.div`
   height: 100%;
+  flex: 1;
 
   display: flex;
   justify-content: center;
@@ -33,7 +32,7 @@ const ContentWrapper = styled.div`
   gap: 30px;
 
   background-color: ${(props) => props.theme.palette.secondary.light};
-  box-shadow: 0px 0px 250px 20px #fff;
+  box-shadow: 0 0 250px 20px ${(props) => props.theme.palette.common.white};
   border-radius: 8px;
 
   @media (min-width: ${(props) => props.theme.mediaQuery.tablet}px) {

@@ -8,11 +8,11 @@ export const AuthButtons: FC<AuthButtonsProps> = (props) => {
   const router = useRouter();
 
   const handleClickSignInButton = async () => {
-    await router.push("/signin");
+    await router.push("/auth/signin");
   };
 
   const handleClickSignUpButton = async () => {
-    await router.push("/signup");
+    await router.push("/auth/signup");
   };
 
   return (

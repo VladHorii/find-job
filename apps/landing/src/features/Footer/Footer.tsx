@@ -30,7 +30,7 @@ export const Footer = () => {
   );
 };
 
-const Wrapper = styled.div`
+const Wrapper = styled.footer`
   box-shadow: 0 -1px 4px 1px ${(props) => props.theme.palette.secondary.light};
 `;
 

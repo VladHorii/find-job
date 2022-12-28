@@ -1,4 +1,4 @@
-import { Signin_DTO } from "@/features/Auth";
+import { Signin_DTO } from "@/features";
 import { Email, Password, Visibility } from "@hs-job/icons";
 import { Checkbox, Input, Label, P2 } from "@hs-job/ui";
 import { FormikProps } from "formik";

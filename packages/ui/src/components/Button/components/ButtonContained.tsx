@@ -38,7 +38,7 @@ const Button = styled.button<ButtonProps>`
       font-size: 18px;
       line-height: 22px;
     `}
-  &:hover {
+  &:hover, &:focus {
     background-color: ${(props) => props.theme.palette.actions.hover};
   }
 

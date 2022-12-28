@@ -39,7 +39,7 @@ const Button = styled.button<ButtonProps>`
       line-height: 22px;
     `}
 
-  &:hover {
+  &:hover, &:focus {
     background-color: ${(props) => props.theme.palette.actions.disabled};
   }
 

@@ -7,3 +7,4 @@ export * from "./Cash";
 export * from "./Puzzle";
 export * from "./Search";
 export * from "./Password";
+export * from "./Google";

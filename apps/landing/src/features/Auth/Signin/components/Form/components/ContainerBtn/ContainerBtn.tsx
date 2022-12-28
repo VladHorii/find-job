@@ -19,9 +19,9 @@ export const ContainerBtn: FC<Props> = ({ isSubmitting }) => {
         Sign In
       </ButtonStyled>
 
-      <ButtonStyled size={"normal"} variant={"outlined"} type={"button"}>
+      <ButtonIcon size={"normal"} variant={"outlined"} type={"button"}>
         <Google /> Continue with Google
-      </ButtonStyled>
+      </ButtonIcon>
     </Container>
   );
 };
@@ -35,4 +35,12 @@ const Container = styled.div`
 
 const ButtonStyled = styled(Button)`
   width: 100%;
+`;
+
+const ButtonIcon = styled(ButtonStyled)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 5px;
 `;

@@ -6,3 +6,4 @@ export * from "./Email";
 export * from "./Cash";
 export * from "./Puzzle";
 export * from "./Search";
+export * from "./Password";

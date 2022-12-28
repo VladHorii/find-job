@@ -7,6 +7,15 @@ export interface CardProps {
   description: string;
 }
 
+export const Card: FC<CardProps> = ({ title, description }) => {
+  return (
+    <CardWrapper>
+      <H4>{title}</H4>
+      <P1>{description}</P1>
+    </CardWrapper>
+  );
+};
+
 const CardWrapper = styled.div`
   max-width: 300px;
 
@@ -29,12 +38,3 @@ const CardWrapper = styled.div`
     transform: scale(1.05);
   }
 `;
-
-export const Card: FC<CardProps> = ({ title, description }) => {
-  return (
-    <CardWrapper>
-      <H4>{title}</H4>
-      <P1>{description}</P1>
-    </CardWrapper>
-  );
-};

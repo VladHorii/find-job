@@ -2,6 +2,32 @@ import { H4 } from "@hs-job/ui";
 import styled from "styled-components";
 import Typewriter from "typewriter-effect";
 
+export const DynamicText = () => {
+  const currentTypeWriter = [
+    "Text 1",
+    "Text 2",
+    "Text 3",
+    "Text 4",
+    "Text 5",
+    "Text 6",
+  ];
+
+  return (
+    <Container>
+      <H4>Lorem:&nbsp;</H4>
+
+      <Typewriter
+        options={{
+          strings: currentTypeWriter,
+          deleteSpeed: 200,
+          autoStart: true,
+          loop: true,
+        }}
+      />
+    </Container>
+  );
+};
+
 const Container = styled.div`
   display: flex;
   flex-direction: row;
@@ -36,29 +62,3 @@ const Container = styled.div`
     color: ${(props) => props.theme.palette.primary.light};
   }
 `;
-
-export const DynamicText = () => {
-  const currentTypeWriter = [
-    "Text 1",
-    "Text 2",
-    "Text 3",
-    "Text 4",
-    "Text 5",
-    "Text 6",
-  ];
-
-  return (
-    <Container>
-      <H4>Lorem:&nbsp;</H4>
-
-      <Typewriter
-        options={{
-          strings: currentTypeWriter,
-          deleteSpeed: 200,
-          autoStart: true,
-          loop: true,
-        }}
-      />
-    </Container>
-  );
-};

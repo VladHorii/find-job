@@ -9,6 +9,21 @@ export interface MobileModalProps {
   onClose: () => void;
 }
 
+export const MobileModal: FC<MobileModalProps> = ({ isOpen, onClose }) => {
+  return (
+    <Modal open={isOpen} component={"div"} onClose={onClose}>
+      <Content>
+        <CrossWrapper onClick={onClose}>
+          <Cross />
+        </CrossWrapper>
+        <ButtonWrapper>
+          <AuthButtons variant={"text"} />
+        </ButtonWrapper>
+      </Content>
+    </Modal>
+  );
+};
+
 const Content = styled.div`
   background-color: ${(props) => props.theme.palette.common.white};
   width: 100vw;
@@ -34,18 +49,3 @@ const ButtonWrapper = styled.div`
   gap: 15px;
   margin: auto 0;
 `;
-
-export const MobileModal: FC<MobileModalProps> = ({ isOpen, onClose }) => {
-  return (
-    <Modal open={isOpen} component={"div"} onClose={onClose}>
-      <Content>
-        <CrossWrapper onClick={onClose}>
-          <Cross />
-        </CrossWrapper>
-        <ButtonWrapper>
-          <AuthButtons variant={"text"} />
-        </ButtonWrapper>
-      </Content>
-    </Modal>
-  );
-};

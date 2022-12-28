@@ -2,6 +2,21 @@ import { Cash, Email, Globe, Laptop, Puzzle, Search } from "@hs-job/icons";
 import React from "react";
 import styled from "styled-components";
 
+export const Background = () => {
+  return (
+    <Container>
+      <div>
+        <Globe />
+        <Email />
+        <Puzzle />
+        <Cash />
+        <Laptop />
+        <Search />
+      </div>
+    </Container>
+  );
+};
+
 const Container = styled.div`
   width: 100%;
   height: 100%;
@@ -63,18 +78,3 @@ const Container = styled.div`
     right: 10%;
   }
 `;
-
-export const Background = () => {
-  return (
-    <Container>
-      <div>
-        <Globe />
-        <Email />
-        <Puzzle />
-        <Cash />
-        <Laptop />
-        <Search />
-      </div>
-    </Container>
-  );
-};

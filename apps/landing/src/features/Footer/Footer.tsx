@@ -3,6 +3,33 @@ import { Button, H5, P4 } from "@hs-job/ui";
 import React from "react";
 import styled from "styled-components";
 
+export const Footer = () => {
+  return (
+    <Wrapper>
+      <Container>
+        <ContentWrapper>
+          <H5>© 2022 HSjob.com</H5>
+          <P4>You can always contact us by email info@hsjob.com</P4>
+
+          <List>
+            <ListItem>
+              <Button variant={"link"} size={"normal"}>
+                Out team
+              </Button>
+            </ListItem>
+
+            <ListItem>
+              <Button variant={"link"} size={"normal"}>
+                Out team
+              </Button>
+            </ListItem>
+          </List>
+        </ContentWrapper>
+      </Container>
+    </Wrapper>
+  );
+};
+
 const Wrapper = styled.div`
   box-shadow: 0 -1px 4px 1px ${(props) => props.theme.palette.secondary.light};
 `;
@@ -33,30 +60,3 @@ const List = styled.ul`
 `;
 
 const ListItem = styled.li``;
-
-export const Footer = () => {
-  return (
-    <Wrapper>
-      <Container>
-        <ContentWrapper>
-          <H5>© 2022 HSjob.com</H5>
-          <P4>You can always contact us by email info@hsjob.com</P4>
-
-          <List>
-            <ListItem>
-              <Button variant={"link"} size={"normal"}>
-                Out team
-              </Button>
-            </ListItem>
-
-            <ListItem>
-              <Button variant={"link"} size={"normal"}>
-                Out team
-              </Button>
-            </ListItem>
-          </List>
-        </ContentWrapper>
-      </Container>
-    </Wrapper>
-  );
-};

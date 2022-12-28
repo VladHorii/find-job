@@ -1,5 +1,5 @@
 import { Email, Password } from "@hs-job/icons";
-import { Checkbox, Input, Label, P3, P4 } from "@hs-job/ui";
+import { Checkbox, Input, Label, P2, P3 } from "@hs-job/ui";
 import React from "react";
 import styled from "styled-components";
 import { ContainerBtn, ContainerLink } from "./components";
@@ -11,7 +11,7 @@ export const Form = () => {
         <Label>
           <ContainerText>
             <Email />
-            <P3>Email:</P3>
+            <P2>Email:</P2>
           </ContainerText>
 
           <InputStyled placeholder="email..." />
@@ -20,7 +20,7 @@ export const Form = () => {
         <Label>
           <ContainerText>
             <Password />
-            <P3>Password:</P3>
+            <P2>Password:</P2>
           </ContainerText>
 
           <InputStyled placeholder="password..." />
@@ -28,7 +28,7 @@ export const Form = () => {
 
         <Label align={"center"} direction={"row"}>
           <Checkbox />
-          <P4>Remember me</P4>
+          <P2>Remember me</P2>
         </Label>
 
         <ContainerBtn />
@@ -59,8 +59,8 @@ const ContainerText = styled.div`
   gap: 5px;
 
   & svg {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
   }
 `;
 

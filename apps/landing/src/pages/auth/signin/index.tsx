@@ -1,10 +1,10 @@
 import { AuthLayout } from "@/components";
-import { Signin } from "@/features";
+import { SignIn } from "@/features";
 
 const Index = () => {
   return (
     <AuthLayout>
-      <Signin />
+      <SignIn />
     </AuthLayout>
   );
 };

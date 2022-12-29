@@ -1,6 +1,6 @@
 import { InputPassword } from "@/components";
-import { Signin_DTO } from "@/features";
-import { Email, Password, Visibility } from "@hs-job/icons";
+import { SignIn_DTO } from "@/features";
+import { Email, Password } from "@hs-job/icons";
 import { Button, Checkbox, Input, Label, P2 } from "@hs-job/ui";
 import { FormikProps } from "formik";
 import React, { FC, useState } from "react";
@@ -8,7 +8,7 @@ import styled from "styled-components";
 import { ContainerBtn } from "../ContainerBtn";
 
 interface Props {
-  actions: FormikProps<Signin_DTO>;
+  actions: FormikProps<SignIn_DTO>;
 }
 
 export const ContainerForm: FC<Props> = ({ actions }) => {

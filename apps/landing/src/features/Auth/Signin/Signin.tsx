@@ -2,7 +2,7 @@ import { Form, Links, Title } from "@/features";
 import React from "react";
 import styled from "styled-components";
 
-export const Signin = () => {
+export const SignIn = () => {
   return (
     <ContentWrapper>
       <Title />

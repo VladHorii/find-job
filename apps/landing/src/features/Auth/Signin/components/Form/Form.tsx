@@ -1,9 +1,9 @@
-import { Schema_Signin, Signin_DTO } from "@/features";
+import { Schema_SignIn, SignIn_DTO } from "@/features";
 import { Formik, FormikHelpers } from "formik";
 import React from "react";
 import { ContainerForm } from "./components";
 
-const initDTO_Signin: Signin_DTO = {
+const initDTO_SignIn: SignIn_DTO = {
   email: "",
   password: "",
   remember: false,
@@ -11,8 +11,8 @@ const initDTO_Signin: Signin_DTO = {
 
 export const Form = () => {
   const handleSubmitForm = (
-    values: Signin_DTO,
-    actions: FormikHelpers<Signin_DTO>
+    values: SignIn_DTO,
+    actions: FormikHelpers<SignIn_DTO>
   ) => {
     console.log(JSON.stringify(values, null, 2));
     actions.setSubmitting(false);
@@ -21,8 +21,8 @@ export const Form = () => {
   return (
     <>
       <Formik
-        initialValues={initDTO_Signin}
-        validationSchema={Schema_Signin}
+        initialValues={initDTO_SignIn}
+        validationSchema={Schema_SignIn}
         onSubmit={handleSubmitForm}
       >
         {(actions) => <ContainerForm actions={actions} />}

@@ -6,3 +6,5 @@ export * from "./Logo";
 export * from "./IconButton";
 export * from "./Modal";
 export * from "./Label";
+export * from "./VacancyCard";
+export * from "./Avatar";

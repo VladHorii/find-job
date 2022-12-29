@@ -1,5 +1,10 @@
 import React from "react";
+import { Banner } from "./components";
 
 export const Vacancy = () => {
-  return <div>Vacancy</div>;
+  return (
+    <>
+      <Banner />
+    </>
+  );
 };

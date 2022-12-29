@@ -1,3 +1,4 @@
+import { App_Router } from "@hs-job/types";
 import { Button, ButtonProps } from "@hs-job/ui";
 import { useRouter } from "next/router";
 import { FC } from "react";
@@ -7,12 +8,12 @@ type AuthButtonsProps = ButtonProps;
 export const AuthButtons: FC<AuthButtonsProps> = (props) => {
   const router = useRouter();
 
-  const handleClickSignInButton = async () => {
-    await router.push("/auth/signin");
+  const handleClickSignInButton = () => {
+    router.push(App_Router.SignIn);
   };
 
-  const handleClickSignUpButton = async () => {
-    await router.push("/auth/signup");
+  const handleClickSignUpButton = () => {
+    router.push(App_Router.SignUp);
   };
 
   return (

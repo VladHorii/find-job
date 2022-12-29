@@ -1,12 +1,20 @@
 import { Container } from "@/components";
 import { AuthButtons, MobileModal } from "@/features";
 import { Burger } from "@hs-job/icons";
+import { App_Router } from "@hs-job/types";
 import { IconButton, Logo } from "@hs-job/ui";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import styled from "styled-components";
 
 export const Header = () => {
+  const router = useRouter();
   const [isOpenModal, setIsOpenModal] = useState(false);
+
+  const handleClickLogo = () => {
+    console.log("message");
+    router.push(App_Router.Main);
+  };
 
   const handleOpenModal = () => {
     setIsOpenModal(true);
@@ -19,7 +27,7 @@ export const Header = () => {
   return (
     <Wrapper>
       <Container>
-        <Logo />
+        <Logo onClick={handleClickLogo} />
 
         <RightContent>
           <ButtonsWrapper className="buttons-wrapper">

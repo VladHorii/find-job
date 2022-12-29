@@ -1,4 +1,6 @@
 export enum App_Router {
-  SignIn = "signin",
-  SignUp = "signup",
+  Main = "/",
+
+  SignIn = "/auth/signin",
+  SignUp = "/auth/signup",
 }

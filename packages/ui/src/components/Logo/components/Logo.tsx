@@ -18,6 +18,8 @@ export const Logo: FC<Props> = ({ onClick }) => {
 };
 
 const Container = styled.div`
+  cursor: pointer;
+
   & h1 {
     display: flex;
   }

@@ -1,5 +1,15 @@
+import { AuthLayout } from "@/components";
+import { SignUp } from "@/features";
+
 const Index = () => {
-  return <span>signup</span>;
+  return (
+    <>
+      SignUp
+      <AuthLayout>
+        <SignUp />
+      </AuthLayout>
+    </>
+  );
 };
 
 export default Index;

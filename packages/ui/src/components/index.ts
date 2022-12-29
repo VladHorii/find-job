@@ -8,3 +8,4 @@ export * from "./Modal";
 export * from "./Label";
 export * from "./VacancyCard";
 export * from "./Avatar";
+export * from "./VacancyDescription";

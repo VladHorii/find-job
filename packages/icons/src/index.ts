@@ -10,5 +10,8 @@ export * from "./Password";
 export * from "./Google";
 export * from "./Visibility";
 export * from "./VisibilityOff";
+export * from "./RemoteWork";
+export * from "./Product";
 export * from "./Trash";
 export * from "./Star";
+

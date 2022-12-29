@@ -1,6 +1,8 @@
 import { Container } from "@/components";
 import { Background, DynamicText } from "@/features";
+import { App_Router } from "@hs-job/types";
 import { Button, H3, H4 } from "@hs-job/ui";
+import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 
@@ -16,9 +18,11 @@ export const Banner = () => {
 
           <DynamicText />
 
-          <Button size={"large"} variant={"contained"}>
-            Перейти к вакансиям
-          </Button>
+          <Link href={App_Router.Vacancy}>
+            <Button size={"large"} variant={"contained"}>
+              Перейти к вакансиям
+            </Button>
+          </Link>
         </ContentWrapper>
       </ContainerContent>
     </Container>

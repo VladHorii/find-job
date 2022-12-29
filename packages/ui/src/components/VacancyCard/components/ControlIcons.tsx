@@ -12,11 +12,21 @@ export const ControlIcons = () => {
 
 const Container = styled.div`
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 
   & svg {
-    width: 16px;
+    min-width: 16px;
     height: 16px;
+  }
+
+  @media (min-width: ${(props) => props.theme.mediaQuery.tablet}px) {
+    flex-direction: column;
+  }
+
+  @media (min-width: ${(props) => props.theme.mediaQuery.desktop}px) {
+    & svg {
+      min-width: 18px;
+      height: 18px;
+    }
   }
 `;

@@ -1,11 +1,11 @@
 import { Container } from "@/components";
-import { CardProps } from "@hs-job/types";
-import { VacancyDescription } from "@hs-job/ui";
+import { VacancyDescriptionProps } from "@hs-job/types";
+import { VacancyCard, VacancyDescription } from "@hs-job/ui";
 import React from "react";
 import styled from "styled-components";
 
 export const List = () => {
-  const vacancyList: CardProps[] = [
+  const vacancyList: VacancyDescriptionProps[] = [
     {
       id: "0",
       title: "Junior React Developer",
@@ -35,6 +35,8 @@ export const List = () => {
   return (
     <Container>
       <MyList>
+        <VacancyCard />
+
         {vacancyList.map((element) => (
           <VacancyDescription
             key={element.id}
@@ -49,7 +51,7 @@ export const List = () => {
   );
 };
 
-const MyList = styled.ul`
+const MyList = styled.div`
   cursor: pointer;
 
   display: flex;

@@ -8,3 +8,7 @@ export interface ComponyInfoProps {
   jobVariant: "Remote" | "Office" | "Remote or Office";
   companyType: "Outsource" | "Outstaff" | "Product" | "Startup";
 }
+
+export interface VacancyCardProps {
+  title?: string;
+}

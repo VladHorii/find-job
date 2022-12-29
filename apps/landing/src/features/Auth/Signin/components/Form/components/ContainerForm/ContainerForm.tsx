@@ -1,8 +1,9 @@
+import { InputPassword } from "@/components";
 import { Signin_DTO } from "@/features";
 import { Email, Password, Visibility } from "@hs-job/icons";
 import { Button, Checkbox, Input, Label, P2 } from "@hs-job/ui";
 import { FormikProps } from "formik";
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import styled from "styled-components";
 import { ContainerBtn } from "../ContainerBtn";
 
@@ -12,6 +13,11 @@ interface Props {
 
 export const ContainerForm: FC<Props> = ({ actions }) => {
   const { handleSubmit, handleChange, values, errors, isSubmitting } = actions;
+  const [passwordType, SetPasswordType] = useState(false);
+
+  const handleClickPasswordType = () => {
+    SetPasswordType((prevState) => !prevState);
+  };
 
   return (
     <Container onSubmit={handleSubmit}>
@@ -29,6 +35,7 @@ export const ContainerForm: FC<Props> = ({ actions }) => {
           value={values.email}
         />
       </Label>
+
       <Label>
         <ContainerText>
           <Password />
@@ -39,13 +46,14 @@ export const ContainerForm: FC<Props> = ({ actions }) => {
           </Button>
         </ContainerText>
 
-        <InputStyled
+        <InputPassword
           type={"password"}
           name={"password"}
           placeholder="password..."
           onChange={handleChange}
           value={values.password}
-          icon={<Visibility />}
+          passwordType={passwordType}
+          handleClickIcon={handleClickPasswordType}
         />
       </Label>
 

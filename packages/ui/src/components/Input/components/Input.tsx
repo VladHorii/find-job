@@ -7,8 +7,8 @@ export interface InputStyledProps {
   mysize: InputProps["size"];
 }
 
-export const Input: FC<InputProps> = ({ size, ...props }) => {
-  const { icon, position, handleClickIcon } = props;
+export const Input: FC<InputProps> = ({ size, handleClickIcon, ...props }) => {
+  const { icon, position } = props;
 
   if (icon) {
     if (position === "end") {
@@ -17,7 +17,9 @@ export const Input: FC<InputProps> = ({ size, ...props }) => {
           mysize={size}
           {...props}
           startAdornment={
-            <IconButton onClick={handleClickIcon}>{icon}</IconButton>
+            <IconButton type="button" onClick={handleClickIcon}>
+              {icon}
+            </IconButton>
           }
         />
       );
@@ -27,7 +29,11 @@ export const Input: FC<InputProps> = ({ size, ...props }) => {
       <InputStyled
         mysize={size}
         {...props}
-        endAdornment={<IconButton onClick={handleClickIcon}>{icon}</IconButton>}
+        endAdornment={
+          <IconButton type="button" onClick={handleClickIcon}>
+            {icon}
+          </IconButton>
+        }
       />
     );
   }

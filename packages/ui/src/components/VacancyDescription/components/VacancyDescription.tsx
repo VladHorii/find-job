@@ -1,10 +1,10 @@
-import { CardProps } from "@hs-job/types";
+import { VacancyDescriptionProps } from "@hs-job/types";
 import React, { FC } from "react";
 import styled from "styled-components";
 import { H5, P2 } from "../../../typography";
 import { ComponyInfo } from "./ComponyInfo";
 
-export const VacancyDescription: FC<CardProps> = ({
+export const VacancyDescription: FC<VacancyDescriptionProps> = ({
   title,
   description,
   jobVariant,

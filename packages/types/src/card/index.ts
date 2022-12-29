@@ -1,9 +1,6 @@
-export interface CardProps extends ComponyDescriptionProps, ComponyInfoProps {
+export interface VacancyDescriptionProps extends ComponyInfoProps {
   id?: string;
   title: string;
-}
-
-export interface ComponyDescriptionProps {
   description: string;
 }
 

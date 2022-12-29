@@ -1,4 +1,4 @@
-import { Form, Links, Title } from "@/features";
+import { Form, Links, Title } from "@/features/Auth/SignIn";
 import React from "react";
 import styled from "styled-components";
 

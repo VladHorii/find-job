@@ -4,7 +4,6 @@ import { SignUp } from "@/features";
 const Index = () => {
   return (
     <>
-      SignUp
       <AuthLayout>
         <SignUp />
       </AuthLayout>

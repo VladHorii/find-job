@@ -37,7 +37,7 @@ const Button = styled.button<ButtonProps>`
       line-height: 22px;
     `}
 
-  &:hover {
+  &:hover, &:focus {
     text-decoration-line: underline;
     color: ${(props) => props.theme.palette.actions.hover};
   }

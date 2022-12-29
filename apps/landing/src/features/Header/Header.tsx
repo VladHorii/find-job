@@ -1,8 +1,10 @@
 import { Container } from "@/components";
 import { AuthButtons, MobileModal } from "@/features";
 import { Burger } from "@hs-job/icons";
+import { App_Router } from "@hs-job/types";
 import { IconButton, Logo } from "@hs-job/ui";
-import { useState } from "react";
+import Link from "next/link";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 export const Header = () => {
@@ -19,7 +21,9 @@ export const Header = () => {
   return (
     <Wrapper>
       <Container>
-        <Logo />
+        <Link href={App_Router.Main}>
+          <Logo />
+        </Link>
 
         <RightContent>
           <ButtonsWrapper className="buttons-wrapper">
@@ -54,7 +58,7 @@ const ButtonsWrapper = styled.div`
   gap: 15px;
 `;
 
-const Wrapper = styled.div`
+const Wrapper = styled.header`
   margin-bottom: 10px;
-  box-shadow: 0px 1px 5px ${(props) => props.theme.palette.secondary.light};
+  box-shadow: 0 1px 5px ${(props) => props.theme.palette.secondary.light};
 `;

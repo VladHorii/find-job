@@ -6,3 +6,7 @@ export * from "./Email";
 export * from "./Cash";
 export * from "./Puzzle";
 export * from "./Search";
+export * from "./Password";
+export * from "./Google";
+export * from "./Visibility";
+export * from "./VisibilityOff";

@@ -38,7 +38,7 @@ const Button = styled.button<ButtonProps>`
 
       padding: 8px 15px;
     `}
-  &:hover {
+  &:hover, &:focus {
     border: 1px solid ${(props) => props.theme.palette.actions.hover};
   }
 

@@ -1,4 +1,6 @@
+import { App_Router } from "@hs-job/types";
 import { Button, H3, H4 } from "@hs-job/ui";
+import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 
@@ -9,9 +11,11 @@ export const Banner = () => {
         <H3>Information hidden</H3>
         <H4>for non-authorized users</H4>
 
-        <Button variant={"link"} size={"large"}>
-          Sign Up
-        </Button>
+        <Link href={App_Router.SignUp}>
+          <Button variant={"link"} size={"large"}>
+            Sign Up
+          </Button>
+        </Link>
       </Content>
     </Container>
   );

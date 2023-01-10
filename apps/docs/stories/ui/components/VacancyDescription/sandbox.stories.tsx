@@ -1,5 +1,4 @@
-import { VacancyDescriptionProps } from "@hs-job/types";
-import { VacancyDescription } from "@hs-job/ui";
+import { VacancyDescription, VacancyDescriptionProps } from "@hs-job/ui";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import React, { FC } from "react";
 import styled from "styled-components";

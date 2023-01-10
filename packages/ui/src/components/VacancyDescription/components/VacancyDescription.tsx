@@ -1,7 +1,7 @@
-import { VacancyDescriptionProps } from "@hs-job/types";
 import React, { FC } from "react";
 import styled from "styled-components";
 import { H5, P2 } from "../../../typography";
+import { VacancyDescriptionProps } from "../types";
 import { ComponyInfo } from "./ComponyInfo";
 
 export const VacancyDescription: FC<VacancyDescriptionProps> = ({

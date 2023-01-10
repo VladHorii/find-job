@@ -1,7 +1,7 @@
-import { VacancyCardProps } from "@hs-job/types";
 import { FC } from "react";
 import styled from "styled-components";
 import { VacancyDescription } from "../../VacancyDescription";
+import { VacancyCardProps } from "../types";
 import { CompanyDescription } from "./CompanyDescription";
 import { ControlIcons } from "./ControlIcons";
 

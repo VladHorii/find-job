@@ -5,17 +5,28 @@ import { VacancyDescription } from "../../VacancyDescription";
 import { CompanyDescription } from "./CompanyDescription";
 import { ControlIcons } from "./ControlIcons";
 
-export const VacancyCard: FC<VacancyCardProps> = () => {
+export const VacancyCard: FC<VacancyCardProps> = ({
+  title,
+  description,
+  companyName,
+  companyHr,
+  publicationDate,
+  jobVariant,
+  companyType,
+}) => {
   return (
     <Container>
-      <CompanyDescription />
+      <CompanyDescription
+        companyName={companyName}
+        companyHr={companyHr}
+        publicationDate={publicationDate}
+      />
+
       <VacancyDescription
-        title={"Junior React Developer"}
-        jobVariant={"Office"}
-        companyType={"Outsource"}
-        description={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven12312iam..."
-        }
+        title={title}
+        jobVariant={jobVariant}
+        companyType={companyType}
+        description={description}
       />
       <ControlIcons />
     </Container>

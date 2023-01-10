@@ -35,7 +35,17 @@ export const List = () => {
   return (
     <Container>
       <MyList>
-        <VacancyCard />
+        <VacancyCard
+          title={"Senior React Developer"}
+          jobVariant={"Remote or Office"}
+          companyType={"Outstaff"}
+          description={
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven12312iam..."
+          }
+          companyName={"Company Name"}
+          companyHr={"User Name, HR manager"}
+          publicationDate={"01 may, 2022"}
+        />
 
         {vacancyList.map((element) => (
           <VacancyDescription

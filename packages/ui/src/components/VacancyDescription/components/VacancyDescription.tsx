@@ -19,7 +19,7 @@ export const VacancyDescription: FC<VacancyDescriptionProps> = ({
   );
 };
 
-const ListItem = styled.li`
+const ListItem = styled.div`
   display: flex;
   flex-direction: column;
 

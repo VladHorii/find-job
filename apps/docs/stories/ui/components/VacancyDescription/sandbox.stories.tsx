@@ -29,7 +29,7 @@ const Template: ComponentStory<FC<VacancyDescriptionProps>> = (props) => {
 export const Sandbox = Template.bind({});
 Sandbox.args = {
   title: "Middle React Developer",
-  jobVariant: "Remote work",
+  jobVariant: "Office",
   companyType: "Product",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven12312iam...",

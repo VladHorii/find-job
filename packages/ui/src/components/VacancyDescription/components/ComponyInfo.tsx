@@ -1,8 +1,8 @@
 import { Product, RemoteWork } from "@hs-job/icons";
-import { ComponyInfoProps } from "@hs-job/types";
 import React, { FC } from "react";
 import styled from "styled-components";
 import { P3 } from "../../../typography";
+import { ComponyInfoProps } from "../types";
 
 export const ComponyInfo: FC<ComponyInfoProps> = ({
   jobVariant,

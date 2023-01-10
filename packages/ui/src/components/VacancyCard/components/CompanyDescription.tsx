@@ -1,9 +1,9 @@
-import { CompanyDescriptionProps } from "@hs-job/types";
 import { FC } from "react";
 import styled from "styled-components";
 import { useTheme } from "../../../theme";
 import { H5, P4 } from "../../../typography";
-import { Avatar } from "../../index";
+import { Avatar } from "../../Avatar";
+import { CompanyDescriptionProps } from "../types";
 
 export const CompanyDescription: FC<CompanyDescriptionProps> = ({
   companyName,

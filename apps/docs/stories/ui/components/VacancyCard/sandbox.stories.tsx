@@ -1,4 +1,4 @@
-import { VacancyCard } from "@hs-job/ui";
+import { VacancyCard, VacancyCardProps } from "@hs-job/ui";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import React, { FC } from "react";
 import styled from "styled-components";
@@ -17,13 +17,22 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const Template: ComponentStory<FC> = () => {
+const Template: ComponentStory<FC<VacancyCardProps>> = (props) => {
   return (
     <Container>
-      <VacancyCard />
+      <VacancyCard {...props} />
     </Container>
   );
 };
 
 export const Sandbox = Template.bind({});
-Sandbox.args = {};
+Sandbox.args = {
+  title: "Senior React Developer",
+  jobVariant: "Remote or Office",
+  companyType: "Outstaff",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven12312iam...",
+  companyName: "Company Name",
+  companyHr: "User Name, HR manager",
+  publicationDate: "01 may, 2022",
+};

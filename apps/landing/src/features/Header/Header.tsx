@@ -1,8 +1,7 @@
-import { Container } from "@/components";
 import { AuthButtons, MobileModal } from "@/features";
 import { Burger } from "@hs-job/icons";
 import { App_Router } from "@hs-job/types";
-import { IconButton, Logo } from "@hs-job/ui";
+import { Container, IconButton, Logo } from "@hs-job/ui";
 import Link from "next/link";
 import React, { useState } from "react";
 import styled from "styled-components";

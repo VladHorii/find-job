@@ -1,5 +1,4 @@
-import { Container } from "@/components";
-import { Button, H5, P4 } from "@hs-job/ui";
+import { Button, Container, H5, P4 } from "@hs-job/ui";
 import React from "react";
 import styled from "styled-components";
 

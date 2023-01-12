@@ -10,3 +10,4 @@ export * from "./VacancyCard";
 export * from "./Avatar";
 export * from "./VacancyDescription";
 export * from "./Layout";
+export * from "./Container";

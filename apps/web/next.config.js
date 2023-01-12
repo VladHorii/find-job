@@ -1,5 +1,14 @@
 module.exports = {
   reactStrictMode: true,
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/vacancy",
+        permanent: true,
+      },
+    ];
+  },
   experimental: {
     transpilePackages: ["ui"],
   },

@@ -1,5 +1,5 @@
-import { Container } from "@/components";
 import { Card } from "@/features";
+import { Container } from "@hs-job/ui";
 import { FC } from "react";
 import styled from "styled-components";
 

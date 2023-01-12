@@ -1,7 +1,6 @@
-import { Container } from "@/components";
 import { Background, DynamicText } from "@/features";
 import { App_Router } from "@hs-job/types";
-import { Button, H3, H4 } from "@hs-job/ui";
+import { Button, Container, H3, H4 } from "@hs-job/ui";
 import Link from "next/link";
 import React from "react";
 import styled from "styled-components";

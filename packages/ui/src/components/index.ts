@@ -9,3 +9,4 @@ export * from "./Label";
 export * from "./VacancyCard";
 export * from "./Avatar";
 export * from "./VacancyDescription";
+export * from "./Layout";

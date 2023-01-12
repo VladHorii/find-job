@@ -1,5 +1,5 @@
-import { AuthLayout } from "@/components";
 import { SignIn } from "@/features";
+import { AuthLayout } from "@hs-job/ui";
 
 const Index = () => {
   return (

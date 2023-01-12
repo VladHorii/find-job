@@ -1,15 +1,15 @@
-import { Footer, Header } from "@/features";
-import React, { FC, PropsWithChildren } from "react";
+import React, { FC } from "react";
 import styled from "styled-components";
+import { LayoutProps } from "../types";
 
-export const Layout: FC<PropsWithChildren> = ({ children }) => {
+export const Layout: FC<LayoutProps> = ({ header, footer, children }) => {
   return (
     <Wrapper>
-      <Header />
+      {header}
 
       <MainStyled>{children}</MainStyled>
 
-      <Footer />
+      {footer}
     </Wrapper>
   );
 };

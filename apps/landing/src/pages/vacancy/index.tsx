@@ -1,9 +1,9 @@
-import { Layout } from "@/components";
-import { Vacancy } from "@/features";
+import { Footer, Header, Vacancy } from "@/features";
+import { Layout } from "@hs-job/ui";
 
 const Index = () => {
   return (
-    <Layout>
+    <Layout header={<Header />} footer={<Footer />}>
       <Vacancy />
     </Layout>
   );

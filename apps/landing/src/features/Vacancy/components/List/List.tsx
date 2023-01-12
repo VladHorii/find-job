@@ -1,6 +1,9 @@
-import { Container } from "@/components";
-import { VacancyDescriptionProps } from "@hs-job/types";
-import { VacancyCard, VacancyDescription } from "@hs-job/ui";
+import {
+  Container,
+  VacancyCard,
+  VacancyDescription,
+  VacancyDescriptionProps,
+} from "@hs-job/ui";
 import React from "react";
 import styled from "styled-components";
 

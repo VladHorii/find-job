@@ -1,12 +1,8 @@
-import { FC, PropsWithChildren } from "react";
+import { FC } from "react";
 import styled from "styled-components";
+import { ContainerProps } from "../types";
 
-interface Props extends PropsWithChildren {
-  padding?: string;
-  margin?: string;
-}
-
-export const Container: FC<Props> = ({ children, ...props }) => {
+export const Container: FC<ContainerProps> = ({ children, ...props }) => {
   return (
     <MyContainer {...props}>
       <ContentWrapper {...props}>{children}</ContentWrapper>
@@ -14,14 +10,14 @@ export const Container: FC<Props> = ({ children, ...props }) => {
   );
 };
 
-const MyContainer = styled.div<Props>`
+const MyContainer = styled.div<ContainerProps>`
   width: 100%;
 
   margin: ${(props) => props.margin || "0"};
   background-color: ${(props) => props.theme.palette.common.white};
 `;
 
-const ContentWrapper = styled.div<Props>`
+const ContentWrapper = styled.div<ContainerProps>`
   display: flex;
   justify-content: space-between;
   max-width: ${(props) => props.theme.mediaQuery.container.maxWidth}px;

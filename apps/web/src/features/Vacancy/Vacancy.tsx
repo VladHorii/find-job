@@ -1,5 +1,10 @@
 import React from "react";
+import { List } from "./components";
 
 export const Vacancy = () => {
-  return <div>Vacancy</div>;
+  return (
+    <>
+      <List />
+    </>
+  );
 };

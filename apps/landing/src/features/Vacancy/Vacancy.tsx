@@ -1,10 +1,10 @@
 import React from "react";
-import { Banner, List } from "./components";
+import { List, Warning } from "./components";
 
 export const Vacancy = () => {
   return (
     <>
-      <Banner />
+      <Warning />
       <List />
     </>
   );

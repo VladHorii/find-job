@@ -1,5 +1,5 @@
-import { Banner, Footer, Header, MainInfo } from "@/features";
-import { Layout } from "@hs-job/ui";
+import { Banner, Header, MainInfo } from "@/features";
+import { Footer, Layout } from "@hs-job/ui";
 import React from "react";
 
 const Index = () => {

@@ -14,4 +14,4 @@ export * from "./RemoteWork";
 export * from "./Product";
 export * from "./Trash";
 export * from "./Star";
-
+export * from "./ArrowDown";

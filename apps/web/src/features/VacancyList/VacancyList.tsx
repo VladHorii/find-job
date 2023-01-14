@@ -1,8 +1,8 @@
-import { Container, VacancyCard, VacancyCardProps } from "@hs-job/ui";
+import { VacancyCard, VacancyCardProps } from "@hs-job/ui";
 import React from "react";
 import styled from "styled-components";
 
-export const List = () => {
+export const VacancyList = () => {
   const vacancyList: VacancyCardProps[] = [
     {
       id: "0",
@@ -62,22 +62,20 @@ export const List = () => {
   ];
 
   return (
-    <Container>
-      <MyList>
-        {vacancyList.map((vacancy) => (
-          <VacancyCard
-            key={vacancy.id}
-            title={vacancy.title}
-            jobVariant={vacancy.jobVariant}
-            companyType={vacancy.companyType}
-            description={vacancy.description}
-            companyName={vacancy.companyName}
-            companyHr={vacancy.companyHr}
-            publicationDate={vacancy.publicationDate}
-          />
-        ))}
-      </MyList>
-    </Container>
+    <MyList>
+      {vacancyList.map((vacancy) => (
+        <VacancyCard
+          key={vacancy.id}
+          title={vacancy.title}
+          jobVariant={vacancy.jobVariant}
+          companyType={vacancy.companyType}
+          description={vacancy.description}
+          companyName={vacancy.companyName}
+          companyHr={vacancy.companyHr}
+          publicationDate={vacancy.publicationDate}
+        />
+      ))}
+    </MyList>
   );
 };
 

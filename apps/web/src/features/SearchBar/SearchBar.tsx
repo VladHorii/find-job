@@ -35,7 +35,7 @@ const Container = styled.div`
   }
 
   @media ${(props) => props.theme.breakPoints.desktop} {
-    margin-bottom: 20px;
+    margin-bottom: 35px;
   }
 `;
 

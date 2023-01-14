@@ -1,2 +1,3 @@
 export * from "./Header";
-export * from "./Vacancy";
+export * from "./VacancyList";
+export * from "./SearchBar";

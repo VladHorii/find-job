@@ -1,5 +1,5 @@
-import { Footer, Header, Vacancy } from "@/features";
-import { Layout } from "@hs-job/ui";
+import { Header, Vacancy } from "@/features";
+import { Footer, Layout } from "@hs-job/ui";
 
 const Index = () => {
   return (

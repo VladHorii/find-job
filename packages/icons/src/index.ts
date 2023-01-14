@@ -15,3 +15,4 @@ export * from "./Product";
 export * from "./Trash";
 export * from "./Star";
 export * from "./ArrowDown";
+export * from "./Settings";

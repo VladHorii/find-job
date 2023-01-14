@@ -55,4 +55,9 @@ export const Theme: DefaultTheme = {
       maxWidth: 1200,
     },
   },
+  breakPoints: {
+    mobile: "(min-width: 320px)",
+    tablet: "(min-width: 768px)",
+    desktop: "(min-width: 1200px)",
+  },
 };

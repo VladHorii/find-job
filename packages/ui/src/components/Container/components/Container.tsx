@@ -20,6 +20,7 @@ const MyContainer = styled.div<ContainerProps>`
 const ContentWrapper = styled.div<ContainerProps>`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: ${(props) => props.theme.mediaQuery.container.maxWidth}px;
   margin: 0 auto;
   padding: 15px;

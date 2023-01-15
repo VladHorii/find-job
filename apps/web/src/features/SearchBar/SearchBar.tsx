@@ -20,8 +20,16 @@ export const SearchBar = () => {
       <H4>Пойдем искать работу</H4>
       <ContainerControls>
         <Input
+          className={"input__mobile"}
           icon={<Settings />}
-          placeholder={"text"}
+          placeholder={"Профессия"}
+          handleClickIcon={handleOpenModal}
+        />
+
+        <Input
+          className={"input__tabletDesktop"}
+          icon={<Settings />}
+          placeholder={"Пойдем искать работу Профессия, должность или компания"}
           handleClickIcon={handleOpenModal}
         />
 
@@ -82,6 +90,20 @@ const ContainerControls = styled.div`
     @media ${(props) => props.theme.breakPoints.tablet} {
       display: block;
       border-radius: 0 8px 8px 0;
+    }
+  }
+
+  & .input__tabletDesktop {
+    display: none;
+  }
+
+  @media ${(props) => props.theme.breakPoints.tablet} {
+    & .input__mobile {
+      display: none;
+    }
+
+    & .input__tabletDesktop {
+      display: block;
     }
   }
 `;

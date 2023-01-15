@@ -1,4 +1,5 @@
 import { ArrowDown, Burger } from "@hs-job/icons";
+import { IconButton } from "@hs-job/ui";
 import React, { useState } from "react";
 import styled from "styled-components";
 import { MobileModal } from "../MobileModal";
@@ -20,7 +21,9 @@ export const RightContent = () => {
       <UserBar>
         <User />
 
-        <ArrowDown />
+        <IconButton>
+          <ArrowDown />
+        </IconButton>
       </UserBar>
 
       <BurgerStyled onClick={handleOpenModal} />

@@ -47,6 +47,7 @@ export const Tags = () => {
 };
 
 const Container = styled.div`
+  width: 100%;
   overflow: hidden;
 
   display: flex;

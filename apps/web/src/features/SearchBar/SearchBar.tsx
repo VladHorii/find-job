@@ -1,14 +1,29 @@
 import { Settings } from "@hs-job/icons";
 import { Button, H4, Input } from "@hs-job/ui";
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import { MobileModal } from "../MobileModal";
 
 export const SearchBar = () => {
+  const [isOpenModal, setIsOpenModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsOpenModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsOpenModal(false);
+  };
+
   return (
     <Container>
       <H4>Пойдем искать работу</H4>
       <ContainerControls>
-        <Input icon={<Settings />} placeholder={"text"} />
+        <Input
+          icon={<Settings />}
+          placeholder={"text"}
+          handleClickIcon={handleOpenModal}
+        />
 
         <Button
           className={"searchBar_Btn"}
@@ -18,6 +33,8 @@ export const SearchBar = () => {
           Поиск
         </Button>
       </ContainerControls>
+
+      <MobileModal isOpen={isOpenModal} onClose={handleCloseModal} />
     </Container>
   );
 };

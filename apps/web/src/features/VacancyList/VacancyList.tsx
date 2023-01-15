@@ -79,7 +79,9 @@ export const VacancyList = () => {
         ))}
       </List>
 
-      <Filter />
+      <ContainerFilter>
+        <Filter />
+      </ContainerFilter>
     </Container>
   );
 };
@@ -90,12 +92,24 @@ const Container = styled.div`
 `;
 
 const List = styled.div`
-  width: 75%;
-
   display: flex;
   flex-direction: column;
 
   gap: 30px;
 
   cursor: pointer;
+
+  @media ${(props) => props.theme.breakPoints.tablet} {
+    width: 75%;
+  }
+`;
+
+const ContainerFilter = styled.div`
+  width: 25%;
+  display: none;
+
+  @media ${(props) => props.theme.breakPoints.tablet} {
+    width: none;
+    display: block;
+  }
 `;

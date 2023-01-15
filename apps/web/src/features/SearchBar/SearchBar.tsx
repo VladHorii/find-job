@@ -27,7 +27,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   gap: 10px;
 
   @media ${(props) => props.theme.breakPoints.tablet} {
@@ -51,6 +51,10 @@ const ContainerControls = styled.div`
     @media ${(props) => props.theme.breakPoints.tablet} {
       width: 600px;
       border-radius: 8px 0 0 8px;
+
+      & button {
+        display: none;
+      }
     }
   }
 
